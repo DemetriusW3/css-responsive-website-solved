@@ -3,15 +3,83 @@
   * Add the media rule and the styles that are common within the TABLET and MOBILE views
   * Add the media rule and the styles that belong to the MOBILE view only
 */
-
-@media (min-width: 1024px) {
-  /* .top-navigation .trigram {
-    display: none;
-  } */
-
-  /* 👇👇👇 Add the styles that belong to the DESKTOP view only beneath 👇👇👇 */
-}
-
-/* 👇👇👇 Add the media rule and the styles that are common within the TABLET and MOBILE views beneath 👇👇👇 */
-
-/* 👇👇👇 Add the media rule and the styles that belong to the MOBILE view only beneath 👇👇👇 */
+@media (min-width: 1024px){
+  .top-navigation a:hover {color:black}
+  .trigram:hover {color:black}
+  }
+  .teammate-social-icons .facebook:hover {background-color: gray;}
+  .teammate-social-icons .twitter:hover {background-color: gray;}
+  .teammate-social-icons .linkedin:hover {background-color: gray;}
+  .facebook:hover .icon{background-color: white;}
+  .facebook:hover {color: white;}
+  .twitter:hover .icon {background-color: white;}
+  .twitter:hover {color:white;}
+  .instagram:hover .icon {background-color: white;}
+  .instagram:hover {color: white;}
+  .linked-in:hover .icon {background-color: white;}
+  .linked-in:hover {color: white;}
+  .email a:hover {color: white;}
+  .phones a:hover {color: white;}
+  
+  
+  
+    /* 👇👇👇 Add the styles that belong to the DESKTOP view only beneath 👇👇👇 */
+  @media (min-width:768px) and (max-width: 1023px) {
+    header {position: sticky; top: 0px; background-color: white; min-width:768px; max-width: 1023;}
+    .top-navigation {display: flex; flex-direction: row-reverse;}
+    .top-navigation a {display: none;}
+    .portfolio-list {display:flex; flex-direction: column}
+    .portfolio-item {display: flex; flex-direction: row;}
+    .portfolio-img-wrapper {height: 135px;}
+    img {height: 100%; }
+    .portfolio-item-info {align-content: space-evenly;}
+    .teammates-list::before{visibility: hidden;}
+    .teammates-list::after{visibility: hidden;}
+    .teammates-list-wrapper {flex-wrap: wrap; justify-content: space-between;}
+    .teammate-img-wrapper{width:50%;}
+    .teammate {width: 45%;}
+    .facebook span {display:none}
+    .twitter span {display:none}
+    .instagram span {display:none}
+    .linked-in span {display:none}
+    .social-icons {display:flex; justify-content: center;}
+    .social-icons div {width: 30px !important;}
+  
+  }
+  
+  /* 👇👇👇 Add the media rule and the styles that are common within the TABLET and MOBILE views beneath 👇👇👇 */
+  @media (min-width:0px) and (max-width: 767px) {
+    header {position: sticky; top: 0px; background-color: white; min-width: 0px; max-width: 767px; }
+    .top-navigation {display: flex; flex-direction: row-reverse;}
+    .top-navigation a {display: none;}
+    .portfolio-list {display:flex; flex-direction:column}
+    .item-title, .item-description {text-align: center;}
+    .teammates-content {display:flex; justify-content:center;}
+    .teammate {width: 328px; height: 162px; border: 1px solid gray; align-items: center; justify-content: flex-start;}
+    .teammates-list-wrapper {display:flex; flex-direction: column; flex-wrap: wrap; align-content: center;}
+    .teammate-img-wrapper {width:150px; height: 150px;}
+    .teammate-img-wrapper>img {height:160px; width: 160px; padding: 16px;}
+    .teammate {flex-direction: row; justify-content: space-between;}
+    .teammate-data {width:200px; height: 92px; justify-content: space-between;}
+    .teammates-social-icons div {background-color: white;}
+    .teammates-list {width: 572px; }
+    .teammates-list::before {visibility: hidden;}
+    .teammates-list::after {visibility: hidden;}
+    .teammate-social-icons .facebook  {background-color: gray;}
+    .teammate-social-icons .twitter {background-color: gray;}
+    .teammate-social-icons .linkedin {background-color: gray;}
+  
+  
+    .icon{flex-direction:column; background-color: white !important;}
+    .social-icons {flex-direction: column; flex-wrap: wrap; align-items:center; width: 560px;}
+    .facebook {color: white;}
+    .twitter {color: white;}
+    .instagram {color: white;}
+    .linked-in {color: white;}
+    .footer-contacts { flex-direction: column; justify-content: center; flex-wrap:wrap; align-items:center;}
+  
+  
+  
+  }
+  
+  /* 👇👇👇 Add the media rule and the styles that belong to the MOBILE view only beneath 👇👇👇 */
